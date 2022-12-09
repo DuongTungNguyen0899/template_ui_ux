@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="theme-color" content="#323232">
+    <meta name="Description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>UI.UX</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" /> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        /* @font-face {
+            font-family: "Poppins-medium";
+            src: url(./assets/font/Poppins-Medium.ttf);
+        }
+
+        @font-face {
+            font-family: "Poppins-bold";
+            src: url(./assets/font/Poppins-Bold.ttf);
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="container__full">
+            <div class="header__item--content">
+                <div class="header__item--left">
+                    <h1 class="header__logo">
+                        <a href="#" class="header-logo__link">
+                            <img class="header__logo--image" src="./assets/img/ref-logo/logo.webp" alt="Logo Kilala" />
+                        </a>
+                    </h1>
+                </div>
+                <div class="header__item--right" id="menu">
+                    <nav class="navPages">
+                        <ul class="navPages__list">
+                            <li class="navPages__item"><a class="navPages__action" href="#" title="Sign up"><span>Sign up</span></a></li>
+                            <li class="navPages__item"><a class="navPages__action" href="#" title="Login"><span>Login</span></a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="header__mobile">
+                <div class="header__mobile--content">
+                    <div class="header__mobile--item">
+                        <a href="javascript:void(0)" class="mobile__menu--toggle" data-mobile-menu-toggle="menu">
+                            <span class="mobile__menu--toggleIcon">Toggle menu</span>
+                        </a>
+                    </div>
+                    <div class="header__mobile--item">
+                        <div class="header__logo">
+                            <img src="./assets/img/kilala_logo_main.png" alt="Logo Kilala" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Home Carousel -->
+    <!-- <div class="home__carousel">
+            <div class="item">
+                <a class="image__wrapper" href="#" role="button"> 
+                    <img src="./assets/img/banner.jpg" alt="Banner" />
+                </a>
+            </div>
+        </div> -->
+
+    <div class="tab-ui">
+        <div class="container">
+            <h2 class="page__heading">TAB UI/UX</h2>
+            <div class="">
+                <!-- Tab links -->
+                <div class="tabs">
+                    <nav class="tabs__navigation">
+                        <button class="tabs__btn active" id="all" type="button">ALL</button>
+                        <button class="tabs__btn " id="2" type="button">2</button>
+                        <button class="tabs__btn " id="3" type="button">3</button>
+                        <button class="tabs__btn " id="4" type="button">4</button>
+
+                    </nav>
+
+                    <div id="parent" class="tabs__content">
+                        <div class="tabs__body 3 active">
+                            <div data-filter="button" class="card" style="flex-direction: column;">
+                                <div class="eye-header">
+                                    <h4 class="relative"><span>Credit: </span><span class="">Dương testttt</span></h4>
+                                    <button type="button" class="s3-btn" name="Open" onclick="popupOpen();" class="click-eye"><i class="fa fa-eye"></i></button>
+                                    <!-- Overlay -->
+                                    <div class="overlay" id="overlay"></div>
+
+                                    <!-- Popup -->
+                                    <div class="popup" id="popup" style="display:none;">
+                                        <div class="popup-inner">
+                                            <input type="button" name="Close" class="s3-btn-close" onclick="popupClose();" value="&times;">
+                                            <button class="copy-btn">coppy</button>
+                                            <div class="htmlcontent content-cop">
+                                                <div class="copy-content coppy-html">Moscow Conference Line
+                                                    <br> <span class="phone">5.654.7888</span>
+                                                    <br> 7-digit access code 7896154
+                                                    <br> Admin: 8888
+                                                </div>
+
+                                            </div>
+                                            <div class="language-markup"></div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Popup Button -->
+                                    <!-- <input type="button" class="s3-btn" name="Open" onclick="popupOpen();"  value="Click to Show Overlay"> -->
+                                </div>
+                                <div id="source-code" class="card-ui make-snippet">
+                                    <div class=""><button>click me</button></div>
+                                </div>
+                                <!-- <div class="language-markup123">12</div> -->
+                                <div class="name-button">
+                                    <h3 class="">Button hover</h3>
+                                    <pre class="pre-content">
+                                        <code class="language-html code-highlight" id="content-htmlelement"></code>
+                                        <button class="copy-btn"></button>
+                                    </pre>
+                                    <div class="copy-element">
+                                        <button class="copy-btn"><span>HTML</span></button>
+                                        <button class="copy-btn"><span>css</span></button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Home Category -->
+    <!-- <div class="home__category">
+        <div class="container">
+            <h2 class="page__heading">Category</h2>
+            <div class="home__category--content">
+                <div class="item">
+                    <a class="image__wrapper" href="#" role="button">
+                        <img src="./assets/img/img_cat_01.jpg" alt="Bedroom" />
+                    </a>
+                    <div class="content">
+                        <h3 class="title">
+                            <a href="#">
+                                <span>Bedroom</span>
+                            </a>
+                        </h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <a class="image__wrapper" href="#" role="button">
+                        <img src="./assets/img/img_cat_02.jpg" alt="Kitchen" />
+                    </a>
+                    <div class="content">
+                        <h3 class="title">
+                            <a href="#">
+                                <span>Kitchen</span>
+                            </a>
+                        </h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <a class="image__wrapper" href="#" role="button">
+                        <img src="./assets/img/img_cat_03.jpg" alt="Washroom" />
+                    </a>
+                    <div class="content">
+                        <h3 class="title">
+                            <a href="#">
+                                <span>Washroom</span>
+                            </a>
+                        </h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <a class="image__wrapper" href="#" role="button">
+                        <img src="./assets/img/img_cat_04.jpg" alt="Outdoor" />
+                    </a>
+                    <div class="content">
+                        <h3 class="title">
+                            <a href="#">
+                                <span>Outdoor</span>
+                            </a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Brand Slider -->
+    <!-- <div class="home__brand">
+            <div class="container">
+                <h2 class="page__heading">Reference</h2>
+                <div class="brand__slider">
+                    <div class="item">
+                        <a class="image__wrapper" href="#" role="button"> 
+                            <img src="./assets/img/ref-logo/apple.png" alt="Apple" /> 
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="image__wrapper" href="#" role="button"> 
+                            <img src="./assets/img/ref-logo/aqua.png" alt="aqua" /> 
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="image__wrapper" href="#" role="button"> 
+                            <img src="./assets/img/ref-logo/beko.png" alt="beko" /> 
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="image__wrapper" href="#" role="button"> 
+                            <img src="./assets/img/ref-logo/casper.png" alt="casper" /> 
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="image__wrapper" href="#" role="button"> 
+                            <img src="./assets/img/ref-logo/daikin.png" alt="daikin" /> 
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="image__wrapper" href="#" role="button"> 
+                            <img src="./assets/img/ref-logo/dell.png" alt="dell" /> 
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="image__wrapper" href="#" role="button"> 
+                            <img src="./assets/img/ref-logo/lg.png" alt="lg" /> 
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="image__wrapper" href="#" role="button"> 
+                            <img src="./assets/img/ref-logo/panasonic.png" alt="panasonic" /> 
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="image__wrapper" href="#" role="button"> 
+                            <img src="./assets/img/ref-logo/samsung.png" alt="samsung" /> 
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="image__wrapper" href="#" role="button"> 
+                            <img src="./assets/img/ref-logo/sharp.png" alt="sharp" /> 
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="image__wrapper" href="#" role="button"> 
+                            <img src="./assets/img/ref-logo/sony.png" alt="sony" /> 
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="image__wrapper" href="#" role="button"> 
+                            <img src="./assets/img/ref-logo/toshiba.png" alt="toshiba" /> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+    <!-- Footer -->
+    <!-- <footer class="footer">
+        <div class="container">
+            <section class="footer__info">
+                <article class="footer__info--col">
+                    <div class="footer__info--logo">
+                        <img src="./assets/img/kilala_logo_main.png" alt="Logo Kilala" />
+                    </div>
+                    <h4 class="footer__info--title">KILALA COMMUNICATION</h4>
+                    <p class="footer__info--text">3rd Floor, Copac Square Building, 12 Ton Dan, Ward 13, District 4, HCMC, VietNam</p>
+                    <p class="footer__info--text"><a href="tel:(+84) 902 767 595"><span>(+84) 902 767 595</span></a></p>
+                    <p class="footer__info--text"><a href="mailto:test-frontend@dev.kilala"><span>test-frontend@dev.kilala</span></a></p>
+                </article>
+
+            </section>
+        </div>
+    </footer> -->
+
+    <!-- Sidebar Mobile -->
+    <!-- <div id="sideBlock_menu" class="side__block sideblock--left">
+        <div class="side__block--container">
+            <div class="side__block--header">
+                <h3>Menu</h3>
+                <button class="btn__close" type="button" title="Close">
+                    <span>Close</span>
+                </button>
+
+            </div>
+            <div class="side__block--body">
+                <div id="menuMobile"></div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="overlay"></div>
+
+    <script>
+
+        $(document).ready(function () {
+
+
+            var $btns = $('.tabs__btn').click(function () {
+                if (this.id == 'all') {
+                    $('#parent > .tabs__body').fadeIn(450);
+                } else {
+                    var $el = $('.' + this.id).fadeIn(450);
+                    $('#parent > .tabs__body').not($el).hide();
+                }
+                $btns.removeClass('active');
+                $(this).addClass('active');
+            })
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/all.min.js" integrity="sha512-LW9+kKj/cBGHqnI4ok24dUWNR/e8sUD8RLzak1mNw5Ja2JYCmTXJTF5VpgFSw+VoBfpMvPScCo2DnKTIUjrzYw==" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="./assets/js/main.js" defer></script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,54 @@
+#source-code {
+  margin-bottom: 20px;
+}
+#source-code div {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#source-code div button {
+  border: none;
+  background-color: offwhite;
+  font-size: 30px;
+  padding: 20px 40px;
+  text-transform: capitalize;
+  cursor: pointer;
+  -webkit-transform: all 0.3s;
+          transform: all 0.3s;
+  position: relative;
+}
+#source-code div button:before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: -5px;
+  left: -5px;
+  border-top: 2px solid tomato;
+  border-left: 2px solid tomato;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+#source-code div button:hover:before,
+#source-code div button:hover:after {
+  width: 104%;
+  height: 110%;
+}
+#source-code div button:after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  bottom: -5px;
+  right: -5px;
+  border-bottom: 2px solid tomato;
+  border-right: 2px solid tomato;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
